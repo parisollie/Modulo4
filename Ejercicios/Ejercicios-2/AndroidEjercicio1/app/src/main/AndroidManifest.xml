@@ -13,14 +13,40 @@
         android:theme="@style/Theme.AndroidEjercicio1"
         tools:targetApi="31">
         <activity
-            android:name=".IntentImplicitoActivity"
+            android:name=".componentesgraficos.ConstraintActivity"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".componentesgraficos.LinearActivity"
             android:exported="false" />
-
         <activity
-            android:name=".FirstActivity"
+            android:name=".componentesgraficos.RelativeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.FrameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.SelectionComponentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.IntentImplicitoActivity"
+            android:exported="false" />
+        <!--
+ Aquí le decimos que regrese a la actividad padre
+         android:parentActivityName=".FirstActivity"
+         hacemos esta flechita <-
+        -->
+        <!-- android:parentActivityName=".FirstActivity" Iba en la linea 26 -->
+        <activity
+            android:name=".activities.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.recycleview.RecyclerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CicloVidaActivity"
+            android:name=".activities.CicloVidaActivity"
             android:exported="true" />
     </application>
 
